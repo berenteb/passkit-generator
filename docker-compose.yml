@@ -1,0 +1,8 @@
+version: "3.3"
+services:
+  pass-server:
+    build: .
+    ports:
+      - '7070:3001'
+    command: node dist/index.js
+    restart: always
